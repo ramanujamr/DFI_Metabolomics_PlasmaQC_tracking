@@ -21,7 +21,6 @@ library(yingtools2)
 library(ComplexHeatmap)
 library(circlize)
 library(janitor)
-library(fuzzyjoin)
 
 options(dplyr.summarise.inform = FALSE)
 
