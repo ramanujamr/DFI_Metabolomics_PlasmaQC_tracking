@@ -46,12 +46,12 @@ server <- function(input, output, session) {
   
   fig_tms2 = plot_ly(rbind(df_plasmaqc %>% filter(category == "Medium Abundance"), df_mnt %>% mutate(category = "Medium Abundance")),
                  x = ~date_run, y = ~peakarea, text = ~label, color = ~compound_name,
-                 type = 'scatter', mode = 'markers', name = 'Medium Abundance') %>% 
+                 type = 'scatter', mode = 'markers') %>% 
     layout(title = 'Medium Abundance')
 
   fig_tms3 = plot_ly(rbind(df_plasmaqc %>% filter(category=="Low Abundance"), df_mnt %>% mutate(category = "Low Abundance")),
                  x = ~date_run, y = ~peakarea, text = ~label, color = ~compound_name,
-                 type = 'scatter', mode = 'lines+markers', name = 'Low Abundance') %>% 
+                 type = 'scatter', mode = 'lines+markers') %>% 
     layout(title = 'Low Abundance')
                   
 
