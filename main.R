@@ -107,5 +107,5 @@ Function_readin_csv_2 <- function(filename, zero_threshold, recursive=F){
 
 source('ui.R', local=TRUE)
 source('server.R', local=TRUE)
-shinyApp(ui=ui, server=server)
-#runApp(list(ui=ui, server=server), host="0.0.0.0",port=3000)
+#shinyApp(ui=ui, server=server)
+runApp(list(ui=ui, server=server), host="0.0.0.0",port=3000)
